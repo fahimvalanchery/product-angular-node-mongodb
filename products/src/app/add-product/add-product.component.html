@@ -1,0 +1,42 @@
+
+<div class="card">
+  <div class="card-header">Add a Product</div>
+  <form (ngSubmit)="AddProduct()" >
+  <div class="form-group">
+    <p>Product ID</p>
+    <input type="text" class="form-control input-sm" name="pId" [(ngModel)]="productItem.productId">
+  </div>
+  <div class="form-group">
+    <p>Product Name</p>
+  <input type="text" class="form-control input-sm" name="pName" [(ngModel)]="productItem.productName">
+  </div>
+  <div class="form-group">
+      <p>Product Code</p>
+  <input type="text" class="form-control input-sm" name="pCode" [(ngModel)]="productItem.productCode">
+  </div>
+  <div class="form-group">
+      <p>Product Date</p>
+  <input type="text" class="form-control input-sm" name="pDate" [(ngModel)]="productItem.releaseDate">
+  </div>
+  <div class="form-group">
+      <p>Product Description</p>
+  <input type="text" class="form-control input-sm" name="pDesc" [(ngModel)]="productItem.description">
+  </div>
+  <div class="form-group">
+      <p>Product Price</p>
+  <input type="text" class="form-control input-sm" name="pPrice" [(ngModel)]="productItem.price">
+  </div>
+  <div class="form-group">
+      <p>Product starRating</p>
+  <input type="text" class="form-control input-sm" name="pRate" [(ngModel)]="productItem.starRating">
+  </div>
+  <div class="form-group">
+      <p>Product Image url</p>
+  <input type="text" class="form-control input-sm" name="pImage" [(ngModel)]="productItem.imageUrl">
+  </div>
+  <div class="form-group">
+ <button type="submit" class="btn btn-primary center-block">Submit</button>
+  </div>
+
+  </form>
+</div>

@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-header">{{title}}</div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table">
+          <thead>
+            <tr>
+              <th><button>SHow images</button></th>
+              <th>Book Code</th>
+              <th>Book Name</th>
+              <th>Price</th>
+            </tr>
+            <tr *ngFor='let b of books'>
+              <td><img src="{{b.bookImg}}" alt="image"></td>
+            
+              <td>{{b.bookCode}}</td>
+              <td>{{b.bookName}}</td>
+              <td>{{b.bookPrice}}</td>
+            </tr>
+          </thead>
+      </table>
+    </div>
+  </div>
+</div>
