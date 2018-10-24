@@ -1,22 +1,22 @@
 
 <div class="card">
   <div class="card-header">Add a Book</div>
-  <form (ngSubmit)="" >
+  <form (ngSubmit)="AddBook();" >
   <div class="form-group">
     <p>Book Code</p>
-    <input type="text" class="form-control input-sm" name="bookCode" [(ngModel)]="bookItem.bookCode">
+    <input type="text" class="form-control input-sm" name="bookCode" [(ngModel)]="BookItem.bookCode">
   </div>
   <div class="form-group">
     <p>Book Name</p>
-  <input type="text" class="form-control input-sm" name="bookName" [(ngModel)]="bookItem.bookName">
+  <input type="text" class="form-control input-sm" name="bookName" [(ngModel)]="BookItem.bookName">
   </div>
   <div class="form-group">
       <p>book Price</p>
-  <input type="text" class="form-control input-sm" name="bookPrice" [(ngModel)]="bookItem.bookPrice">
+  <input type="text" class="form-control input-sm" name="bookPrice" [(ngModel)]="BookItem.bookPrice">
   </div>
   <div class="form-group">
       <p>bookImg </p>
-  <input type="text" class="form-control input-sm" name="bookImg" [(ngModel)]="bookItem.bookImg">
+  <input type="text" class="form-control input-sm" name="bookImg" [(ngModel)]="BookItem.bookImg">
   </div>
   <div class="form-group">
  <button type="submit" class="btn btn-primary center-block">Submit</button>

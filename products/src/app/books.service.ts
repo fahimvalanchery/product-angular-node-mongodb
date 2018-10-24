@@ -8,7 +8,7 @@ import {HttpClient} from '@angular/common/http';
 export class BooksService {
   getBooks(){
     return this.http.get("http://localhost:3000/books");
-  }
+  };
   newBook(item){
     return this.http.post("http://localhost:3000/insertbook",{"book":item})
     .subscribe(data=>{console.log(data)}

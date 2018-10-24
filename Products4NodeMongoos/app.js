@@ -37,9 +37,9 @@ app.post('/insertbook',function(req,res){
         bookPrice:req.body.book.bookPrice,
         bookImg:req.body.book.bookImg,
     }
-    var book = new BookData(book);
-    console.log(book);
-    book.save();
+    var books = new BookData(book);
+    console.log(books);
+    books.save();
 });
 
 app.get('/products',function(req,res){
